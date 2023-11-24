@@ -42,6 +42,7 @@ img {
 /* Header */
 .header-menu {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-menu .container {
   display: flex;
@@ -52,20 +53,15 @@ img {
   display: flex;
   align-items: center;
   margin-right: auto;
+  
 }
 
 .header-nav-menu-item {
   display: flex;
   gap: 40px;
+   
 }
-.header-nav-menu-item .link-1:hover::after {
-  display: block;
-  content: '';
-  width: 48px;
-  height: 4px;
-  border-radius: 2px;
-  background: #404bbf;
-}
+
 .logo {
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
@@ -88,14 +84,29 @@ img {
   letter-spacing: 0.02em;
   padding: 24px 0;
   display: block;
-}
-.link:hover {
-  color: #404bbf;
-}
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  }
+  .link-1 {
+    color: #404bbf;
+    position: relative;
+  }
+  .link-1::after {
+    content: '';
+    color: #404bbf;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+  }
+
+.link:hover,
 .link:focus {
   color: #404bbf;
   text-decoration: underline;
-}
+  }
 .address-menu {
   display: flex;
   gap: 40px;
@@ -106,6 +117,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link:hover,
 .address-link:focus {
@@ -137,7 +149,7 @@ img {
     url(../images/backgraund/people-office\ 1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: auto;
+  background-size: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
 }
