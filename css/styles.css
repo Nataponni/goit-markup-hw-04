@@ -193,7 +193,7 @@ margin: 0 auto;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.icons-section-2 {
+.icons-section-intro {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,7 +202,7 @@ margin: 0 auto;
   background: #f4f4fd;
   width: 264px;
   height: 112px;
-  flex-shrink: 0;
+  margin-bottom: 8px;
 }
 .intro-items {
   display: flex;
@@ -218,7 +218,6 @@ margin: 0 auto;
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  margin-top: 8px;
 }
 .intro-list {
   color: #434455;
