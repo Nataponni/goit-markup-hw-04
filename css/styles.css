@@ -89,10 +89,10 @@ img {
   color: #404bbf;
   position: relative;
 }
-.link-studio:active::after {
+.link-studio::after {
   content: '';
-  color: #404bbf;
   position: absolute;
+  color: #404bbf;
   left: 0;
   bottom: -1px;
   width: 48px;
@@ -374,12 +374,12 @@ img {
   background: #2e2f42;
   padding: 100px 0;
 }
-.footer-content {
+.footer .container {
   display: flex;
-  width: 1440px;
-  margin: auto;
-  justify-content: flex-start;
-  gap: 120px;
+  align-items: baseline;
+}
+.footer-content {
+  margin-right: 120px;
 }
 .logo-footer-top {
   display: inline-block;
@@ -418,11 +418,13 @@ img {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.32px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
-
+.footer-icons {
+  gap: 16px;
+}
 
 .footer-social-media .icons-link:hover,
 .footer-social-media .icons-link:hover {
