@@ -57,6 +57,7 @@ img {
 }
 
 .header-nav-menu-item {
+  position: relative;
   display: flex;
   gap: 40px;
 }
@@ -89,7 +90,7 @@ img {
   color: #404bbf;
   position: relative;
 }
-.link-studio::after {
+.link-studio:active::after {
   content: '';
   position: absolute;
   color: #404bbf;
@@ -303,10 +304,8 @@ img {
   fill: #f4f4fd;
 }
 .team-icons-link {
-  
   width: 40px;
   height: 40px;
-  
 }
 .icons-link:hover,
 .icons-link:focus {
@@ -367,7 +366,34 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
+.card-project-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #4d5ae5;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+}
+.project-card:hover .overly {
+  transform: translateY(0%);
+}
+.overlay p {
+  color: #f4f4fd;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 40px;
+}
 /* Footer */
 .footer {
   display: flex;
@@ -427,9 +453,6 @@ img {
 }
 
 .footer-social-media .icons-link:hover,
-.footer-social-media .icons-link:hover {
-  background-color: #31D0AA;
+.footer-social-media .icons-link:focus {
+  background-color: #31d0aa;
 }
-
-  
-  
